@@ -1,0 +1,15 @@
+0000000000000000000000000000000000000000 118f2ef4b05decce4d026d62dd07fde489cef103 Duy Ngo <duy.ngo@corsair.com> 1575360640 +0700	commit (initial): Add project OnlineShop
+118f2ef4b05decce4d026d62dd07fde489cef103 9ed9cb120bf1c54eff8f84275aa5f925c217bdf0 Duy Ngo <duy.ngo@corsair.com> 1575366013 +0700	commit: "Edit Register.cshtml"
+9ed9cb120bf1c54eff8f84275aa5f925c217bdf0 76dda7638fb72ed7d65a16e9903db8d92ffe6860 Duy Ngo <duy.ngo@corsair.com> 1575366314 +0700	commit: Update Register.cshtml
+76dda7638fb72ed7d65a16e9903db8d92ffe6860 59d473c77f4a50e140c6994e4836d2723c80ba67 Duy Ngo <duy.ngo@corsair.com> 1575366590 +0700	pull: Fast-forward
+59d473c77f4a50e140c6994e4836d2723c80ba67 b4b0dfeb944be4d2990601a4c537860faaaeaec7 Duy Ngo <duy.ngo@corsair.com> 1575367633 +0700	commit: test conflict
+b4b0dfeb944be4d2990601a4c537860faaaeaec7 5f6384d573677a06a7cdcb88100a145e7c572f26 Duy Ngo <duy.ngo@corsair.com> 1575367670 +0700	pull: Merge made by the 'recursive' strategy.
+5f6384d573677a06a7cdcb88100a145e7c572f26 a784518b21b961b7afa386c6bd9693054960703f Duy Ngo <duy.ngo@corsair.com> 1575367865 +0700	commit: test concflict
+a784518b21b961b7afa386c6bd9693054960703f b9a382fc41915ed10df244dcdb82f81a93fbb1b2 Duy Ngo <duy.ngo@corsair.com> 1575368294 +0700	commit (merge): Merge branch 'master' of https://github.com/ngonhatduy/OnlineShop
+b9a382fc41915ed10df244dcdb82f81a93fbb1b2 f7266e3d66e56b290ae85c683cf8da924408a6d7 Duy Ngo <duy.ngo@corsair.com> 1575368789 +0700	commit: test
+f7266e3d66e56b290ae85c683cf8da924408a6d7 8af5cfcb8328eabd5a5d8e955f26c1357563937a Duy Ngo <duy.ngo@corsair.com> 1575368905 +0700	commit (merge): test
+8af5cfcb8328eabd5a5d8e955f26c1357563937a 8af5cfcb8328eabd5a5d8e955f26c1357563937a Duy Ngo <duy.ngo@corsair.com> 1575369161 +0700	checkout: moving from master to develop
+8af5cfcb8328eabd5a5d8e955f26c1357563937a 8af5cfcb8328eabd5a5d8e955f26c1357563937a Duy Ngo <duy.ngo@corsair.com> 1575369171 +0700	checkout: moving from develop to develop
+8af5cfcb8328eabd5a5d8e955f26c1357563937a 27daf03f69a630043e0777ada4a6cb09b0418140 Duy Ngo <duy.ngo@corsair.com> 1575369394 +0700	commit: test branch
+27daf03f69a630043e0777ada4a6cb09b0418140 e3e8d919fc9e81247db80622b8f9524515ac43d3 Duy Ngo <duy.ngo@corsair.com> 1575615354 +0700	commit: test branch dev
+e3e8d919fc9e81247db80622b8f9524515ac43d3 96f64366c0466ebdb0db56aea5aa01ab9c43b671 Duy Ngo <duy.ngo@corsair.com> 1575867235 +0700	commit: commit on branch duy

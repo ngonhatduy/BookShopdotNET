@@ -1,0 +1,15 @@
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Debug\Models.dll.config
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Debug\Models.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Debug\Models.pdb
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Debug\EntityFramework.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Debug\PagedList.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Debug\PagedList.Mvc.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Debug\EntityFramework.xml
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Debug\PagedList.xml
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Debug\PagedList.Mvc.xml
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\obj\Debug\Models.csproj.CopyComplete
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\obj\Debug\Models.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\obj\Debug\Models.pdb
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\obj\Debug\Models.csprojAssemblyReference.cache

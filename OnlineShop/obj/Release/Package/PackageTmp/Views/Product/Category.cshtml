@@ -1,0 +1,34 @@
+﻿@model List<Models.EntityFramework.Product>
+@{
+    ViewBag.Title = "Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="content_top">
+    <div class="heading">
+        <h3>Danh mục sản phẩm</h3>
+    </div>
+    <div class="see">
+        <p><a href="#">See all Products</a></p>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="section group">
+    @foreach (var item in Model)
+    {
+        var url = "/chi-tiet/" + item.MetaTiltle + "-" + item.ID;
+        <div class="grid_1_of_4 images_1_of_4">
+            <a href=@url><img src=@item.Image alt=@item.Name style="width:400px;height:250px;"/></a>
+            <h2>@item.Name </h2>
+            <div class="price-details">
+                <div class="price-number">
+                    <p><span class="rupees">@item.Price</span></p>
+                </div>
+                <div class="add-cart">
+                    <h4><a href="/them-gio-hang?productId=@item.ID&Quantity=1">Add to Cart</a></h4>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    }
+</div>
+

@@ -1,0 +1,14 @@
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Release\Models.dll.config
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Release\Models.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Release\Models.pdb
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Release\EntityFramework.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Release\PagedList.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Release\PagedList.Mvc.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Release\EntityFramework.xml
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Release\PagedList.xml
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\bin\Release\PagedList.Mvc.xml
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\obj\Release\Models.csproj.CopyComplete
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\obj\Release\Models.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Models\obj\Release\Models.pdb

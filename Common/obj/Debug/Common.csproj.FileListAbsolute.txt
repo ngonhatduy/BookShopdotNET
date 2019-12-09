@@ -1,0 +1,5 @@
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Debug\Common.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Debug\Common.pdb
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\obj\Debug\Common.csprojAssemblyReference.cache
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\obj\Debug\Common.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\obj\Debug\Common.pdb

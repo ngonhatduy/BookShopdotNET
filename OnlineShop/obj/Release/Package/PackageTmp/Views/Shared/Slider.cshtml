@@ -1,0 +1,7 @@
+﻿@model List<Models.EntityFramework.Slide>
+
+@foreach (var item in Model)
+{
+    <a href="@item.Link"><img src=@item.Image alt="learn more" /></a>
+
+}

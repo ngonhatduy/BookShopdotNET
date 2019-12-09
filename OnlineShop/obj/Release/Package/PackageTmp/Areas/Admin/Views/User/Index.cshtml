@@ -1,0 +1,51 @@
+﻿@model PagedList.IPagedList<Models.EntityFramework.User>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Quản lý người dùng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layouts.cshtml";
+}
+
+@section header{
+    Danh sách người dùng
+}
+@section jsFooter{
+    <script src="~/Assets/Admin/js/userController.js"></script>
+}
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Tài khoản</th>
+                        <th>Tên</th>
+                        <th>Email</th>
+                        <th>Trạng thái</th>
+                        <th>Chức năng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>@item.UserName</td>
+                        <td>@item.Name</td>
+                        <td>@item.Email</td>
+                        <td><a href="#" class="btn-active" data-id="@item.ID">@(item.Status ? "Kích hoạt" : "Khóa")</a></td>
+                        <td>
+                            <a href="/Admin/User/Edit/@item.ID">Sửa</a>
+                            |
+                            <a href="/Admin/User/Delete/@item.ID">Xóa</a>
+
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+         new PagedListRenderOptions()
+            {
+                ContainerDivClasses = new List<string> { "dataTables_paginate paging_simple_numbers" },
+                LiElementClasses = new List<string> {"paginate_button page-item"}
+            })  
+    </div>
