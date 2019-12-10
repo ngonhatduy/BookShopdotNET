@@ -14,20 +14,21 @@
 	position: relative; 
 }
 .slide { 
-	    padding:24px 25px; 
-	    width:31%; 
-	    float: left; 
-	    position: relative; 
+	padding:24px 15px; 
+	width:31%; 
+	float: left; 
+	position: relative; 
  }
  .slider-text{
  	float:left;
- 	width:47%;
+ 	width:40%;
  	padding-left:4%;
  	padding-top:3%;
+    font-size: 70%;
  }
  .slider-img{
  	float:left;
- 	width:42%;
+ 	width:29.6%;
  }
 .slide h1{ 
 	   font-size:2.5em; 
@@ -36,7 +37,7 @@
 	   text-transform:uppercase;
  }
  .slide h1 span{
- 	font-size:3em;
+ 	font-size:2em;
  }
  .slide h2{ 
  	font-size:2em;
@@ -51,7 +52,7 @@
  	 color:#222;
  	 font-size:0.9em; 
  	 padding:5px 0;	   
- 	line-height:1.8em; 
+ 	 line-height:1.8em; 
  }
  .slide p span{
  	   color:#0B86AA;

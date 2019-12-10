@@ -31,7 +31,7 @@ namespace OnlineShop.Controllers
 
         public ActionResult Detail (long id)
         {
-            var product = new ProductDataAccess().ViewDetail(id);
+            var product = new ProductDataAccess().ViewProductDetail(id);
             return View(product);
         }
     }

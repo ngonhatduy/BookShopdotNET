@@ -50,11 +50,11 @@ $(function(){
 	panelPaddingRight = parseFloat(panelPaddingRight, 10);
 
 	panelWidth = panelWidth + panelPaddingLeft + panelPaddingRight;
-	
+
 	var numPanels = $(".slide").length;
 	var tooFar = -(panelWidth * numPanels);
 	var totalMoverwidth = numPanels * panelWidth;
-	$("#mover").css("width", totalMoverwidth);
+    $("#mover").css("width", totalMoverwidth);
 
 	$("#slider").append('');
 

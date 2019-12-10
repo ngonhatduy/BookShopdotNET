@@ -3,34 +3,6 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-@*<table class="table">
-        <thead>
-            <tr>
-                <td>Mã Sản phẩm</td>
-                <td>Tên Sản phẩm</td>
-                <td>ẢNh Sản phẩm</td>
-                <td>Số lượng</td>
-                <td>Đơn giá</td>
-                <td>Thành tiền</td>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@item.Product.ID</td>
-                    <td>@item.Product.Name</td>
-                    <td><img src="@item.Product.Image" style="width: 100px"></td>
-                    <td><input type="text" class="quantity" value="@item.Quantity"></td>
-                    <td>@item.Product.Price.GetValueOrDefault(0)</td>
-                    <td>@(item.Product.Price.GetValueOrDefault(0) * item.Quantity)</td>
-                </tr>
-            }
-
-
-        </tbody>
-    </table>*@
 <style>
     /* Global settings */
 
@@ -87,8 +59,8 @@
 
         /* Apply clearfix in a few places */
         /* Apply dollar signs */
-        .product .product-price:before, .product .product-line-price:before, .totals-value:before {
-            content: '$';
+        .product .product-price:after, .product .product-line-price:after, .totals-value:after {
+            content: ' VNĐ';
         }
 
     /* Body/Header stuff */
@@ -327,30 +299,30 @@
 
     <div class="totals">
         <div class="totals-item">
-            <label>Subtotal</label>
+            <label>Tạm tính</label>
             <div class="totals-value" id="cart-subtotal">0</div>
         </div>
         <div class="totals-item">
-            <label>Tax (5%)</label>
+            <label>Thuế (5%)</label>
             <div class="totals-value" id="cart-tax">0</div>
         </div>
         <div class="totals-item">
-            <label>Shipping</label>
+            <label>Phí giao hàng</label>
             <div class="totals-value" id="cart-shipping">0</div>
         </div>
         <div class="totals-item totals-item-total">
-            <label>Grand Total</label>
+            <label>Thành tiền</label>
             <div class="totals-value" id="cart-total">0</div>
         </div>
     </div>
 
-    <button class="checkout">Checkout</button>
+    <button class="checkout">Thanh toán</button>
 
 </div>
 <script>
     /* Set rates + misc */
-    var taxRate = 0.0;
-    var shippingRate = 5.00;
+    var taxRate = 0.05;
+    var shippingRate = 5000.00;
     var fadeTime = 300;
 
     $(document).ready(function () {

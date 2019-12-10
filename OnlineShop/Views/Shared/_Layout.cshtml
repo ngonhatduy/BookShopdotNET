@@ -13,12 +13,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link href="/Assets/Client/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="/Assets/Client/css/slider.css" rel="stylesheet" type="text/css" media="all" />
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     @*<script type="text/javascript" src="/Assets/Client/js/jquery-1.7.2.min.js"></script>*@
     <script type="text/javascript" src="/Assets/Client/js/move-top.js"></script>
     <script type="text/javascript" src="/Assets/Client/js/easing.js"></script>
     <script type="text/javascript" src="/Assets/Client/js/startstop-slider.js"></script>
 </head>
+
 <body>
     <div class="wrap">
         <div class="header">
@@ -65,13 +69,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="header_bottom">
                 @{Html.RenderAction("MainMenu", "Home");}
                 <div class="search_box">
-                    <form>
-                        <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
+                    <form action="/Product/Search" method="get">
+                        <input type="text" placeholder="Tìm kiếm" name="keyword"><input type="submit" value="">
                     </form>
                 </div>
                 <div class="clear"></div>
             </div>
-            @RenderSection("slide", required: false)
+           @RenderSection("slide", required: false)
            
         </div>
         <div class="main">
