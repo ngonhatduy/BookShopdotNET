@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "AllFeatureProduct";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var ListAll = (List<Models.EntityFramework.Product>)ViewBag.AllFeature;
+
+}
+
+<div class="section group">
+    <div class="content_top">
+        <div class="heading">
+            <h3>Sản phẩm hot</h3>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="section group">
+        @foreach (var item in ListAll)
+        {
+            var url = "/chi-tiet/" + item.MetaTiltle + "-" + item.ID;
+            <div class="row">
+                <div class="grid_1_of_4 images_1_of_4">
+                    <div class="custom">
+                        <a href=@url><img src=@item.Image alt=@item.Name /></a>
+                        <h2>@item.Name </h2>
+                    </div>
+                    <div class="price-details">
+                        <div class="price-number">
+                            <p><span class="rupees">@item.Price</span></p>
+                        </div>
+                        <div class="add-cart">
+                            <h4><a href="/them-gio-hang?productId=@item.ID&Quantity=1">Chọn mua</a></h4>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

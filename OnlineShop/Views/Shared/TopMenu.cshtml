@@ -5,10 +5,10 @@
     }
     @if (session == null)
     {
-        <ul>
+        <ul >
             @foreach (var item in Model)
             {
-            <li><a href="@item.Link">@item.Text</a></li>
+            <li><a href="@item.Link" style="color:darkblue; font-family:Arial">@item.Text</a></li>
             }
         </ul>
     }

@@ -53,5 +53,18 @@ namespace OnlineShop.Controllers
             }
             return PartialView(list);
         }
+
+        public ActionResult AllNewProduct()
+        {
+            var productData = new ProductDataAccess();
+            ViewBag.AllNewProduct = productData.ListAllNewProduct();
+            return View();
+        }
+        public ActionResult AllFeatureProduct()
+        {
+            var productData = new ProductDataAccess();
+            ViewBag.AllFeature = productData.ListAllFeatureProduct();
+            return View();
+        }
     }
 }

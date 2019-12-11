@@ -322,7 +322,7 @@
 <script>
     /* Set rates + misc */
     var taxRate = 0.05;
-    var shippingRate = 5000.00;
+    var shippingRate = 5000;
     var fadeTime = 300;
 
     $(document).ready(function () {
@@ -400,10 +400,10 @@
 
               /* Update totals display */
             $('.totals-value').fadeOut(fadeTime, function() {
-                $('#cart-subtotal').html(subtotal.toFixed(2));
-                $('#cart-tax').html(tax.toFixed(2));
-                $('#cart-shipping').html(shipping.toFixed(2));
-                $('#cart-total').html(total.toFixed(2));
+                $('#cart-subtotal').html(subtotal);
+                $('#cart-tax').html(tax);
+                $('#cart-shipping').html(shipping);
+                $('#cart-total').html(total);
             if(total == 0){
                 $('.checkout').fadeOut(fadeTime);
             }else{

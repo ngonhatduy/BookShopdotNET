@@ -1,0 +1,9 @@
+test
+123
+<<<<<<< HEAD
+456 commit, create conflict, add file
+789
+111
+=======
+456 commit, create conflict, test
+>>>>>>> 7fa1a176034a767e7c2b17e7be9bd2e3f62a1c31

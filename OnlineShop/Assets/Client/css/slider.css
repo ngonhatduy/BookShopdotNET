@@ -14,7 +14,7 @@
 	position: relative; 
 }
 .slide { 
-	padding:24px 15px; 
+	padding:10px 10px; 
 	width:31%; 
 	float: left; 
 	position: relative; 
@@ -24,11 +24,12 @@
  	width:40%;
  	padding-left:4%;
  	padding-top:3%;
-    font-size: 70%;
+    font-size: 60%;
  }
  .slider-img{
  	float:left;
- 	width:29.6%;
+ 	width:33%;
+    padding-left:180px;
  }
 .slide h1{ 
 	   font-size:2.5em; 
@@ -37,7 +38,7 @@
 	   text-transform:uppercase;
  }
  .slide h1 span{
- 	font-size:2em;
+ 	font-size:1em;
  }
  .slide h2{ 
  	font-size:2em;

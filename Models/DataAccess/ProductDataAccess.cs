@@ -25,6 +25,15 @@ namespace Models.DataAccess
             return db.Products.Where(x => x.TopHot != null).OrderByDescending(x => x.CreateDate).Take(top).ToList();
         }
 
+        public List<Product> ListAllNewProduct()
+        {
+            return db.Products.OrderByDescending(x => x.CreateDate).ToList();
+        }
+        public List<Product> ListAllFeatureProduct()
+        {
+            return db.Products.Where(x => x.TopHot != null).OrderByDescending(x => x.CreateDate).ToList();
+        }
+        
         public Product ViewProductDetail(long id)
         {
             return db.Products.Find(id);

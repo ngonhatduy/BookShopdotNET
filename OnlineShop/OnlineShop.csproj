@@ -2008,6 +2008,8 @@
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\About\About.cshtml" />
     <Content Include="Views\News\News.cshtml" />
+    <Content Include="Views\Home\AllNewProduct.cshtml" />
+    <Content Include="Views\Home\AllFeatureProduct.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
