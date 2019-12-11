@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-test
-=======
 test
 123
->>>>>>> duy
+456 commit nè
