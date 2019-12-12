@@ -1,7 +1,7 @@
 ﻿@model Models.EntityFramework.Product
 @{
-    ViewBag.Title = "Register";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var ListRelatedProduct = (List<Models.EntityFramework.Product>)ViewBag.RelatedProduct;
 }
 <div class="main">
     <div class="content">
@@ -95,29 +95,24 @@
                 </div>
                 <div class="product_desc">
                     <div id="horizontalTab">
-                        <ul class="resp-tabs-list">
+                        @*<ul class="resp-tabs-list">
                             <li>Product Details</li>
                             <li>product Tags</li>
                             <li>Product Reviews</li>
                             <div class="clear"></div>
-                        </ul>
+                        </ul>*@
                         <div class="resp-tabs-container">
-                            <div class="product-desc">
-                                <p>Lorem Ipsum is simply dummy text of the <span>printing and typesetting industry</span>. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <span>when an unknown printer took a galley of type and scrambled</span> it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<span> It has survived not only five centuries</span>, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                            </div>
 
-                            <div class="product-tags">
+                            @*<div class="product-tags">
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                                 <h4>Add Your Tags:</h4>
                                 <div class="input-box">
                                     <input type="text" value="">
                                 </div>
                                 <div class="button"><span><a href="#">Add Tags</a></span></div>
-                            </div>
+                            </div>*@
 
-                            <div class="review">
+                            @*<div class="review">
                                 <h4>Lorem ipsum Review by <a href="#">Finibus Bonorum</a></h4>
                                 <ul>
                                     <li>Price :<a href="#"><img src="images/price-rating.png" alt="" /></a></li>
@@ -146,7 +141,7 @@
                                         </div>
                                     </form>
                                 </div>
-                            </div>
+                            </div>*@
                         </div>
                     </div>
                 </div>
@@ -169,42 +164,19 @@
                     <div class="clear"></div>
                 </div>
                 <div class="section group">
+                    @foreach (var item in ListRelatedProduct)
+                    {
+                        var url = "/chi-tiet/" + item.MetaTiltle + "-" + item.ID;
                     <div class="grid_1_of_4 images_1_of_4">
-                        <a href="#"><img src="images/new-pic1.jpg" alt=""></a>
+                        <a href=@url><img src=@item.Image alt=""></a>
                         <div class="price" style="border:none">
                             <div class="add-cart" style="float:none">
-                                <h4><a href="#">Add to Cart</a></h4>
+                                <h4><a href="/them-gio-hang?productId=@item.ID&Quantity=1">Add to Cart</a></h4>
                             </div>
                             <div class="clear"></div>
                         </div>
                     </div>
-                    <div class="grid_1_of_4 images_1_of_4">
-                        <a href="#"><img src="images/new-pic2.jpg" alt=""></a>
-                        <div class="price" style="border:none">
-                            <div class="add-cart" style="float:none">
-                                <h4><a href="#">Add to Cart</a></h4>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </div>
-                    <div class="grid_1_of_4 images_1_of_4">
-                        <a href="#"><img src="images/new-pic4.jpg" alt=""></a>
-                        <div class="price" style="border:none">
-                            <div class="add-cart" style="float:none">
-                                <h4><a href="#">Add to Cart</a></h4>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </div>
-                    <div class="grid_1_of_4 images_1_of_4">
-                        <img src="images/new-pic3.jpg" alt="">
-                        <div class="price" style="border:none">
-                            <div class="add-cart" style="float:none">
-                                <h4><a href="#">Add to Cart</a></h4>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </div>
+                    }
                 </div>
             </div>
             <div class="rightsidebar span_3_of_1">

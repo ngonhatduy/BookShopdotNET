@@ -14,21 +14,21 @@
 	position: relative; 
 }
 .slide { 
-	padding:24px 15px; 
-	width:31%; 
+	padding:14px 15px; 
+	width:25%;
 	float: left; 
-	position: relative; 
+	position: relative;
  }
  .slider-text{
  	float:left;
- 	width:40%;
- 	padding-left:4%;
+ 	width:41%;
+ 	margin-left:0%;
  	padding-top:3%;
-    font-size: 70%;
+    font-size: 60%;
  }
  .slider-img{
  	float:left;
- 	width:29.6%;
+ 	width:49%;
  }
 .slide h1{ 
 	   font-size:2.5em; 
@@ -37,7 +37,7 @@
 	   text-transform:uppercase;
  }
  .slide h1 span{
- 	font-size:2em;
+ 	font-size:1em;
  }
  .slide h2{ 
  	font-size:2em;
@@ -227,16 +227,25 @@
 	.slide h2 {
 		font-size: 1.2em;
 	}
+    .slider-img {
+        width: 40%;
+        margin-left: 5%;
+    }
 }
 @media only screen and (max-width:375px) {
 	.slide h1 {
 		font-size: 1.2em;
 	}
+    .slider-img {
+        width: 30%;
+        margin-left: 5%;
+    }
 }
 @media only screen and (max-width:320px) {
 	.slider-text{
-		width:31%;
-		padding:0 1% 0 0;
+		width:21%;
+        margin-left: -5%;
+		/*padding:0 1% 0 0;*/
 	}
 	.slider-img{
 		width:30%;

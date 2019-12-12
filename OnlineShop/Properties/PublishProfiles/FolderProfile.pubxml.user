@@ -5358,11 +5358,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Assets/Client/css/global.css">
       <publishTime>10/17/2019 09:51:20</publishTime>
     </File>
+    <File Include="Assets/Client/css/jquery-ui.css">
+      <publishTime>12/12/2019 10:37:46</publishTime>
+    </File>
     <File Include="Assets/Client/css/slider.css">
-      <publishTime>12/10/2019 16:29:23</publishTime>
+      <publishTime>12/12/2019 14:36:39</publishTime>
     </File>
     <File Include="Assets/Client/css/style.css">
-      <publishTime>12/10/2019 17:51:33</publishTime>
+      <publishTime>12/12/2019 13:55:50</publishTime>
     </File>
     <File Include="Assets/Client/data/Provinces_Data.xml">
       <publishTime>11/28/2019 16:31:22</publishTime>
@@ -5425,7 +5428,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/17/2019 09:51:20</publishTime>
     </File>
     <File Include="Assets/Client/images/logo.png">
-      <publishTime>12/10/2019 10:58:51</publishTime>
+      <publishTime>12/11/2019 10:02:04</publishTime>
     </File>
     <File Include="Assets/Client/images/new-pic1.jpg">
       <publishTime>10/17/2019 09:51:20</publishTime>
@@ -5530,7 +5533,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/27/2019 16:53:56</publishTime>
     </File>
     <File Include="Assets/Client/js/controller/map.js">
-      <publishTime>11/26/2019 15:42:50</publishTime>
+      <publishTime>12/11/2019 15:43:33</publishTime>
+    </File>
+    <File Include="Assets/Client/js/controller/SearchController.js">
+      <publishTime>12/12/2019 11:33:33</publishTime>
     </File>
     <File Include="Assets/Client/js/easing.js">
       <publishTime>10/17/2019 09:51:20</publishTime>
@@ -5540,6 +5546,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Assets/Client/js/jquery-1.7.2.min.js">
       <publishTime>10/17/2019 09:51:20</publishTime>
+    </File>
+    <File Include="Assets/Client/js/jquery-ui.js">
+      <publishTime>12/12/2019 10:38:55</publishTime>
     </File>
     <File Include="Assets/Client/js/jquery.accordion.js">
       <publishTime>10/17/2019 09:51:20</publishTime>
@@ -5557,16 +5566,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/17/2019 09:51:20</publishTime>
     </File>
     <File Include="Assets/Client/js/startstop-slider.js">
-      <publishTime>12/10/2019 15:49:06</publishTime>
+      <publishTime>12/11/2019 17:29:53</publishTime>
     </File>
     <File Include="Assets/Client/template/neworder.html">
       <publishTime>11/29/2019 15:20:26</publishTime>
     </File>
     <File Include="bin/Common.dll">
-      <publishTime>12/10/2019 17:56:22</publishTime>
+      <publishTime>12/12/2019 16:32:01</publishTime>
     </File>
     <File Include="bin/Common.pdb">
-      <publishTime>12/10/2019 17:56:22</publishTime>
+      <publishTime>12/12/2019 16:32:01</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>09/14/2019 17:01:18</publishTime>
@@ -5581,19 +5590,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/25/2012 11:48:56</publishTime>
     </File>
     <File Include="bin/Models.dll">
-      <publishTime>12/10/2019 17:56:22</publishTime>
+      <publishTime>12/12/2019 16:32:01</publishTime>
     </File>
     <File Include="bin/Models.dll.config">
       <publishTime>11/22/2019 09:53:30</publishTime>
     </File>
     <File Include="bin/Models.pdb">
-      <publishTime>12/10/2019 17:56:22</publishTime>
+      <publishTime>12/12/2019 16:32:01</publishTime>
     </File>
     <File Include="bin/OnlineShop.dll">
-      <publishTime>12/10/2019 17:56:22</publishTime>
+      <publishTime>12/12/2019 16:32:02</publishTime>
     </File>
     <File Include="bin/OnlineShop.pdb">
-      <publishTime>12/10/2019 17:56:22</publishTime>
+      <publishTime>12/12/2019 16:32:02</publishTime>
     </File>
     <File Include="bin/PagedList.dll">
       <publishTime>09/30/2013 17:36:38</publishTime>
@@ -5767,58 +5776,67 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/28/2019 10:28:36</publishTime>
     </File>
     <File Include="Views/Cart/Index.cshtml">
-      <publishTime>12/10/2019 14:29:07</publishTime>
+      <publishTime>12/12/2019 15:07:06</publishTime>
     </File>
     <File Include="Views/Cart/OrderSuccess.cshtml">
       <publishTime>11/26/2019 11:51:17</publishTime>
     </File>
     <File Include="Views/Cart/Payment.cshtml">
-      <publishTime>12/10/2019 14:30:09</publishTime>
+      <publishTime>12/12/2019 15:23:23</publishTime>
     </File>
     <File Include="Views/Contact/Index.cshtml">
-      <publishTime>11/26/2019 16:27:20</publishTime>
+      <publishTime>12/11/2019 15:54:08</publishTime>
+    </File>
+    <File Include="Views/Home/AllFeatureProduct.cshtml">
+      <publishTime>12/11/2019 14:51:18</publishTime>
+    </File>
+    <File Include="Views/Home/AllNewProduct.cshtml">
+      <publishTime>12/11/2019 14:45:05</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>12/10/2019 17:46:02</publishTime>
+      <publishTime>12/12/2019 13:58:07</publishTime>
     </File>
     <File Include="Views/News/News.cshtml">
       <publishTime>11/28/2019 10:33:50</publishTime>
     </File>
     <File Include="Views/Product/Category.cshtml">
-      <publishTime>12/10/2019 13:28:54</publishTime>
+      <publishTime>12/12/2019 14:41:22</publishTime>
     </File>
     <File Include="Views/Product/Detail.cshtml">
-      <publishTime>12/10/2019 09:24:13</publishTime>
+      <publishTime>12/12/2019 13:43:54</publishTime>
+    </File>
+    <File Include="Views/Product/Search.cshtml">
+      <publishTime>12/12/2019 11:57:49</publishTime>
     </File>
     <File Include="Views/Shared/Footer.cshtml">
-      <publishTime>11/13/2019 17:12:08</publishTime>
+      <publishTime>12/11/2019 15:31:09</publishTime>
     </File>
     <File Include="Views/Shared/HeaderCart.cshtml">
-      <publishTime>12/10/2019 13:43:37</publishTime>
+      <publishTime>12/11/2019 10:02:04</publishTime>
     </File>
     <File Include="Views/Shared/MainMenu.cshtml">
-      <publishTime>12/10/2019 17:33:29</publishTime>
+      <publishTime>12/11/2019 10:02:04</publishTime>
     </File>
     <File Include="Views/Shared/ProductCategory.cshtml">
-      <publishTime>12/10/2019 14:59:18</publishTime>
+      <publishTime>12/11/2019 16:58:37</publishTime>
     </File>
     <File Include="Views/Shared/Slide.cshtml">
-      <publishTime>10/21/2019 13:55:56</publishTime>
+      <publishTime>12/11/2019 15:07:28</publishTime>
     </File>
     <File Include="Views/Shared/Slider.cshtml">
-      <publishTime>11/13/2019 18:17:56</publishTime>
+      <publishTime>12/11/2019 15:08:02</publishTime>
     </File>
     <File Include="Views/Shared/TopMenu.cshtml">
-      <publishTime>12/10/2019 09:25:19</publishTime>
+      <publishTime>12/11/2019 16:37:42</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>12/10/2019 17:15:12</publishTime>
+      <publishTime>12/12/2019 10:41:12</publishTime>
     </File>
     <File Include="Views/User/Login.cshtml">
       <publishTime>11/28/2019 09:36:14</publishTime>
     </File>
     <File Include="Views/User/Register.cshtml">
-      <publishTime>12/09/2019 16:03:53</publishTime>
+      <publishTime>12/12/2019 16:21:50</publishTime>
     </File>
     <File Include="Views/User/testgit.html">
       <publishTime>12/03/2019 17:34:54</publishTime>
@@ -5827,7 +5845,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/13/2019 12:55:18</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/29/2019 17:34:38</publishTime>
+      <publishTime>12/12/2019 16:32:47</publishTime>
     </File>
   </ItemGroup>
 </Project>

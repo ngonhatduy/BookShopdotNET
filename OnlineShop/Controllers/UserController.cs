@@ -21,20 +21,20 @@ namespace OnlineShop.Controllers
         }
 
         [HttpPost]
-        public ActionResult Register(string name, string phone, string email, string address, int provinceID, int districtID, string password, string repeatPassword)
+        public ActionResult Register(string userName, string name, string phone, string email, string address, int provinceID, int districtID, string password, string repeatPassword)
         {
             var user = new User();
+            user.UserName = userName;
             user.Name = name;
             user.Phone = phone;
             user.Email = email;
             user.Address = address;
             user.ProvinceID = provinceID;
             user.DistrictID = districtID;
-            if (password == repeatPassword)
-            {
-                user.Password = password;
-            }
+            password = Encryptor.MD5Hash(password);
+            user.Password = password;;
             user.CreateDate = DateTime.Now;
+            user.Status = true;
             var userInsert = new UserDataAccess().Insert(user);
             return RedirectToAction("Login", "User");
         }

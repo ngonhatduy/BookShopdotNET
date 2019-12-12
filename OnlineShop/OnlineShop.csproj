@@ -1708,6 +1708,7 @@
     <Content Include="Assets\Admin\vendor\jquery\jquery.slim.min.js" />
     <Content Include="Assets\Client\css\easy-responsive-tabs.css" />
     <Content Include="Assets\Client\css\global.css" />
+    <Content Include="Assets\Client\css\jquery-ui.css" />
     <Content Include="Assets\Client\css\slider.css" />
     <Content Include="Assets\Client\css\style.css" />
     <Content Include="Assets\Client\data\Provinces_Data.xml" />
@@ -1764,9 +1765,11 @@
     <Content Include="Assets\Client\js\controller\contactController.js" />
     <Content Include="Assets\Client\js\controller\jquery.validate.min.js" />
     <Content Include="Assets\Client\js\controller\map.js" />
+    <Content Include="Assets\Client\js\controller\SearchController.js" />
     <Content Include="Assets\Client\js\easing.js" />
     <Content Include="Assets\Client\js\easyResponsiveTabs.js" />
     <Content Include="Assets\Client\js\jquery-1.7.2.min.js" />
+    <Content Include="Assets\Client\js\jquery-ui.js" />
     <Content Include="Assets\Client\js\jquery.accordion.js" />
     <Content Include="Assets\Client\js\jquery.easing.js" />
     <Content Include="Assets\Client\js\move-top.js" />
@@ -2010,6 +2013,7 @@
     <Content Include="Views\News\News.cshtml" />
     <Content Include="Views\Home\AllNewProduct.cshtml" />
     <Content Include="Views\Home\AllFeatureProduct.cshtml" />
+    <Content Include="Views\Product\Search.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

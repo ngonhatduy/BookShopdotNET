@@ -177,5 +177,7 @@ namespace Models.EntityFramework
                 .Property(e => e.ModifiedBy)
                 .IsUnicode(false);
         }
+
+        public System.Data.Entity.DbSet<Model.ViewModel.ProductViewModel> ProductViewModels { get; set; }
     }
 }

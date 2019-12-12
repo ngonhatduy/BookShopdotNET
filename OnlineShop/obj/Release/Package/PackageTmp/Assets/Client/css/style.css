@@ -69,6 +69,8 @@ body {
 }
 .account_desc{
 	float:right;
+    font-family:'Times New Roman', Times, serif;
+    color:darkgreen;
 }
 .account_desc li{
 	display:inline;
@@ -1383,9 +1385,17 @@ body {
 	.wrap {
 		width: 90%;
 	}
+    .slider-text {
+        float: left !important;
+        width: 40% !important;
+        padding-left: 12% !important;
+        padding-top: 3% !important;
+        font-size: 70% !important;
+    }
 	.span_1_of_3 p.history{
 		width:80%;
 	}
+
 	.wish-list li {
 		margin-right:20px;
 	}
@@ -1481,9 +1491,9 @@ body {
 	.content h2 {
 		font-size: 1.3em;
 	}
-	.price p span {
-		font-size: 2.3em;
-	}
+    .price p span {
+        font-size: 2.3em;
+    }
 	.subscribe, .community-poll {
 		margin: 0 0 30px 8px;
 	}
@@ -1764,6 +1774,10 @@ body {
 	.account_desc li a {
 		padding: 0 9px;
 	}
+    .slider-text {
+        margin-top: -40px;
+        margin-left: -75px;
+    }
     .custom {
         min-height: 255px;
     }
@@ -1845,6 +1859,9 @@ body {
     .custom {
         min-height: 220px;
     }
+    .slider-text {
+        margin-left: -75px;
+    }
 	.menu li a {
 		padding: 11px 9.95px;
 	}
@@ -1869,9 +1886,19 @@ body {
 	.logo {
 		width: 63%;
 	}
-	.account_desc li a{
-		padding:0;
-	}
+    .slider-text {
+        margin-top: -10px;
+        margin-left: 50px;
+    }
+    .product {
+        font-size: 90%;
+    }
+    .totals {
+        font-size: 90%;
+    }
+    .account_desc li a {
+        padding: 0;
+    }
 	.menu li a{
 		padding:15px 4.8px;
 	}

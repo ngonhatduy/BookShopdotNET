@@ -3,7 +3,13 @@
     ViewBag.Title = "Payment";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<!-- Custom fonts for this template-->
+<link href="/Assets/Admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+<link href="/Assets/Admin/css/sb-admin-2.min.css" rel="stylesheet">
 @*<table class="table">
         <thead>
             <tr>
@@ -33,7 +39,6 @@
     </table>*@
 <style>
     /* Global settings */
-
     .product-image {
         float: left;
         width: 20%;
@@ -85,11 +90,11 @@
         zoom: 1;
     }
 
-        /* Apply clearfix in a few places */
-        /* Apply dollar signs */
-        .product .product-price:after, .product .product-line-price:after, .totals-value:after {
-            content: ' VNĐ';
-        }
+    /* Apply clearfix in a few places */
+    /* Apply dollar signs */
+    .product .product-price:after, .product .product-line-price:after, .totals-value:after {
+        content: ' VNĐ';
+    }
 
     /* Body/Header stuff */
     body {
@@ -128,42 +133,42 @@
         border-bottom: 1px solid #eee;
     }
 
-        .product .product-image {
-            text-align: center;
-        }
+    .product .product-image {
+        text-align: center;
+    }
 
-            .product .product-image img {
-                width: 100px;
-            }
+    .product .product-image img {
+        width: 100px;
+    }
 
-        .product .product-details .product-title {
-            margin-top: 0px;
-            margin-right: 20px;
-            font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
-        }
+    .product .product-details .product-title {
+        margin-top: 0px;
+        margin-right: 20px;
+        font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+    }
 
-        .product .product-details .product-description {
-            margin: 5px 20px 5px 0;
-            line-height: 1.4em;
-        }
+    .product .product-details .product-description {
+        margin: 5px 20px 5px 0;
+        line-height: 1.4em;
+    }
 
-        .product .product-quantity input {
-            width: 40px;
-        }
+    .product .product-quantity input {
+        width: 40px;
+    }
 
-        .product .remove-product {
-            border: 0;
-            padding: 4px 8px;
-            background-color: #c66;
-            color: #fff;
-            font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
-            font-size: 12px;
-            border-radius: 3px;
-        }
+    .product .remove-product {
+        border: 0;
+        padding: 4px 8px;
+        background-color: #c66;
+        color: #fff;
+        font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+        font-size: 12px;
+        border-radius: 3px;
+    }
 
-            .product .remove-product:hover {
-                background-color: #a44;
-            }
+    .product .remove-product:hover {
+        background-color: #a44;
+    }
 
     /* Totals section */
     .totals .totals-item {
@@ -173,18 +178,18 @@
         margin-bottom: 10px;
     }
 
-        .totals .totals-item label {
-            float: left;
-            clear: both;
-            width: 79%;
-            text-align: right;
-        }
+    .totals .totals-item label {
+        float: left;
+        clear: both;
+        width: 79%;
+        text-align: right;
+    }
 
-        .totals .totals-item .totals-value {
-            float: right;
-            width: 21%;
-            text-align: right;
-        }
+    .totals .totals-item .totals-value {
+        float: right;
+        width: 21%;
+        text-align: right;
+    }
 
     .totals .totals-item-total {
         font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
@@ -201,10 +206,24 @@
         border-radius: 3px;
     }
 
-        .checkout:hover {
-            background-color: #494;
-        }
+    .checkout:hover {
+        background-color: #494;
+    }
 
+    label.error {
+        display: block;
+        float: none;
+        color: red;
+        position:relative;      /* added */
+        top:0.2em;              /* added */
+    }
+
+    .error {
+        color: #e74c3c;
+        font-size:18px;
+        display:inline-block;
+        border-color: red;
+    }
     /* Make adjustments for tablet */
     @@media screen and (max-width: 650px) {
         .shopping-cart {
@@ -222,9 +241,9 @@
             width: auto;
         }
 
-            .product-image img {
-                margin: 0 0 10px 10px;
-            }
+        .product-image img {
+            margin: 0 0 10px 10px;
+        }
 
         .product-details {
             float: none;
@@ -241,13 +260,13 @@
             width: 100px;
         }
 
-            .product-quantity input {
-                margin-left: 20px;
-            }
+        .product-quantity input {
+            margin-left: 20px;
+        }
 
-            .product-quantity:before {
-                content: 'x';
-            }
+        .product-quantity:before {
+            content: 'x';
+        }
 
         .product-removal {
             width: auto;
@@ -283,6 +302,7 @@
             width: 40%;
         }
     }
+
 </style>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -300,7 +320,7 @@
 
     @foreach (var item in Model)
     {
-        
+
         <div class="product">
             <input type="text" value=@item.Product.ID data-id="@item.Product.ID" hidden>
             <div class="product-image">
@@ -348,33 +368,47 @@
 
 </div>
 
-<div class="section group">
-    <div class="col-md-6" style="float:right; margin-left:50px">
-        @using (Html.BeginForm("Payment", "Cart", FormMethod.Post))
-        {
-        <div>
-            <div class="form-group">
-                <label>Người nhận</label>
-                <input name="shipName" class="form-control" />
+
+<div class="container">
+
+    <div class="card o-hidden border-0 shadow-lg my-5">
+        <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+                <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+                <div class="col-lg-7">
+                    <div class="p-5">
+                        <div class="text-center">
+                            <h1 class="h4 text-gray-900 mb-4">Thông tin đặt hàng</h1>
+                        </div>
+                        @using (Html.BeginForm("Payment", "Cart", FormMethod.Post, new { id = "information" }))
+                        {
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-3 mb-sm-3">
+                                    <input type="text" class="form-control form-control-user" placeholder="Người nhận" name="shipName">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control form-control-user" placeholder="Điện thoại" name="mobile">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control form-control-user" placeholder="Email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-user" placeholder="Địa chỉ" name="address">
+                            </div>
+                            <button class="btn btn-primary btn-user btn-block" type="submit">Đặt hàng</button>
+                            @*<a href="login.html" class="btn btn-primary btn-user btn-block">
+                                    Register Account
+                                </a>*@
+                        }
+                        <hr>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label>Điện thoại</label>
-                <input name="mobile" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label>Địa chỉ</label>
-                <input name="address" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input name="email" class="form-control" />
-            </div>
-            <button type="submit">Đặt hàng</button>
         </div>
-        }
     </div>
 </div>
-
 <script>
     /* Set rates + misc */
     var taxRate = 0.05;
@@ -389,18 +423,17 @@
             //console.log(item1);
         })
         /* Assign actions */
-        $('.product-quantity input').change( function() {
+        $('.product-quantity input').change(function () {
             updateQuantity(this);
         });
 
-        $('.product-removal button').click( function() {
+        $('.product-removal button').click(function () {
             //removeItem(this);
             //sessionStorage.removeItem(this);
         });
 
         /* Update quantity */
-        function updateQuantity(quantityInput)
-        {
+        function updateQuantity(quantityInput) {
             /* Calculate line price */
             var productRow = $(quantityInput).parent().parent();
             var price = parseFloat(productRow.children('.product-price').text());
@@ -418,11 +451,10 @@
         }
 
         /* Remove item from cart */
-        function removeItem(removeButton)
-        {
+        function removeItem(removeButton) {
             /* Remove row from DOM and recalc cart total */
             var productRow = $(removeButton).parent().parent();
-            productRow.slideUp(fadeTime, function() {
+            productRow.slideUp(fadeTime, function () {
                 productRow.remove();
                 recalculateCart();
             });
@@ -430,39 +462,38 @@
     });
 
     /* Recalculate cart */
-    function recalculateCart()
-        {
-            var subtotal = 0;
+    function recalculateCart() {
+        var subtotal = 0;
 
-            /* Sum up row totals */
-            $('.product').each(function () {
-                subtotal += parseFloat($(this).children('.product-line-price').text());
-            });
+        /* Sum up row totals */
+        $('.product').each(function () {
+            subtotal += parseFloat($(this).children('.product-line-price').text());
+        });
 
-              /* Calculate totals */
-              var tax = subtotal * taxRate;
-              var shipping = (subtotal > 0 ? shippingRate : 0);
-              var total = subtotal + tax + shipping;
+        /* Calculate totals */
+        var tax = subtotal * taxRate;
+        var shipping = (subtotal > 0 ? shippingRate : 0);
+        var total = subtotal + tax + shipping;
 
-              /* Update totals display */
-            $('.totals-value').fadeOut(fadeTime, function() {
-                $('#cart-subtotal').html(subtotal.toFixed(2));
-                $('#cart-tax').html(tax.toFixed(2));
-                $('#cart-shipping').html(shipping.toFixed(2));
-                $('#cart-total').html(total.toFixed(2));
-            if(total == 0){
+        /* Update totals display */
+        $('.totals-value').fadeOut(fadeTime, function () {
+            $('#cart-subtotal').html(subtotal.toFixed(2));
+            $('#cart-tax').html(tax.toFixed(2));
+            $('#cart-shipping').html(shipping.toFixed(2));
+            $('#cart-total').html(total.toFixed(2));
+            if (total == 0) {
                 $('.checkout').fadeOut(fadeTime);
-            }else{
+            } else {
                 $('.checkout').fadeIn(fadeTime);
-              }
-              $('.totals-value').fadeIn(fadeTime);
-            });
+            }
+            $('.totals-value').fadeIn(fadeTime);
+        });
     }
 
     $(".product-removal button").on('click', function () {
         $.ajax({
             url: '/Cart/DeleteItem',
-            data: { "id": $(this).data('id')},
+            data: { "id": $(this).data('id') },
             type: "POST",
             dataType: "json",
             success: function (response) {
@@ -473,9 +504,127 @@
             }
 
         })
-        
+
     });
-//test git
+    //test git
     //ngonhatduy
+    $(function () {
+        $.ajax({
+            url: '/User/LoadProvince',
+            type: "POST",
+            async: true,
+            dataType: "json",
+            success: function (response) {
+                var data = response.data;
+                //console.log(response);
+                if (response.data.length != 0) {
+                    for (var i = 0; i < data.length; i++) {
+                        //$('#regionSelector').val(data[i].Name);
+                        $('#provinceSelector').append('<option value="' + data[i].ID + '">' + data[i].Name + '</option>');
+                    }
+                }
+            }
+        })
+
+    
+        $('#provinceSelector').on("change", function () {
+
+            var id = $(this).val();
+            $('#districtSelector').empty();
+            $(function () {
+                $.ajax({
+                    url: '/User/LoadDistrict',
+                    type: "POST",
+                    async: true,
+                    dataType: "json",
+                    data: { provinceID: id },
+                    success: function (response) {
+                        var data = response.data;
+                        //console.log(data);
+                        if (response.data.length != 0) {
+                            for (var i = 0; i < data.length; i++) {
+                                //$('#regionSelector').val(data[i].Name);
+                                $('#districtSelector').append('<option value="' + data[i].ID + '">' + data[i].Name + '</option>');
+                            }
+
+                            //    console("Success");
+                            //}
+                            //else {
+
+                            //    console("Fail");
+                        }
+                    }
+                })
+            });
+        });
+        $('#districtSelector').on("change", function () {
+            var id = $(this).val();
+            $('#precinctSelector').empty();
+
+            $(function () {
+                $.ajax({
+                    url: '/User/LoadPrecinct',
+                    type: "POST",
+                    async: true,
+                    dataType: "json",
+                    data: { districtID: id },
+                    success: function (response) {
+                    var data = response.data;
+                    console.log(data);
+                    if (response.data.length != 0) {
+                        for (var i = 0; i < data.length; i++) {
+                            //$('#regionSelector').val(data[i].Name);
+                            $('#precinctSelector').append('<option value="' + data[i].ID + '">' + data[i].Name + '</option>');
+                        }
+                        }
+                    }
+                })
+            });
+        });
+
+    });
+    //DuyNgo
+    //Test
+    $("#information").validate({
+        rules: {
+            name: "required",
+            phone: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            provinceID: "required",
+            districtID: "required",
+            precinctID: "required",
+            address: "required",
+            password: {
+                required: true,
+                minlength: 5
+            },
+            repeatPassword: {
+                required: true,
+                minlength: 5,
+                equalTo: "#password"
+            },
+        },
+        messages: {
+            name: "Vui lòng nhập tên của bạn",
+            phone: "Vui lòng nhập số điện thoại",
+            email: "Địa chỉ email không hợp lệ",
+            address: "Vui lòng nhập địa chỉ",
+            provinceID: "Hãy chọn tỉnh/thành phố",
+            districtID: "Hãy chọn quận/huyện",
+            precinctID: "Hãy chọn xã/thị trấn",
+			password: {
+				required: "Xin nhập mật khẩu",
+				minlength: "Mật khẩu dài tối thiểu 5 ký tự"
+			},
+			repeatPassword: {
+				required: "Vui lòng nhập lại mật khẩu",
+				minlength: "Mật khẩu dài tối thiểu 5 ký tự",
+				equalTo: "Mật khẩu nhập lại chưa đúng"
+			}
+		}
+    });
 </script>
 
