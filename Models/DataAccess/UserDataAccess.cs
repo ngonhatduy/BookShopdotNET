@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Models.EntityFramework;
 using System.Data.SqlClient;
 using PagedList;
+using Common;
+
 namespace Models.DataAccess
 {
     public class UserDataAccess
@@ -79,7 +81,7 @@ namespace Models.DataAccess
             db.SaveChanges();
             return entity.ID;
         }
-        public int Login(string UserName, string PassWord)
+        public int Login(string UserName, string PassWord, bool isLoginAdmin = false)
         {
             //var query = from x in db.Users where x.UserName = userName && x.Password == password LinQ
             //var result = db.Users.Count(x => x.UserName == UserName && x.Password == PassWord); //Case này thì không xác định được trường hợp sai tên đăng nhập hay mật khẩu, nên phát triển tiếp case bên dưới.
@@ -91,22 +93,53 @@ namespace Models.DataAccess
             }
             else
             {
-                if(result.Status == false)
+                if (isLoginAdmin == true) //Kiêm tra user có phải là admin
                 {
-                    return -1;
-                    //Tài khoản đang bị khóa
-                }
-                else
-                {
-                    if(result.Password == PassWord)
+                    if (result.GroupID == CommonConstants.ADMIN_GROUP || result.GroupID == CommonConstants.MOD_GROUP)
                     {
-                        return 1;
-                        //Nhập đúng mật khẩu
+                        if (result.Status == false)
+                        {
+                            return -1;
+                            //Tài khoản đang bị khóa
+                        }
+                        else
+                        {
+                            if (result.Password == PassWord)
+                            {
+                                return 1;
+                                //Nhập đúng mật khẩu
+                            }
+                            else
+                            {
+                                return -2;
+                                //Nhập sai mật khẩu
+                            }
+                        }
+                    }
+                    else //Không thuộc admin/mod group
+                    {
+                        return -3;
+                    }
+                }
+                else //user không phải là admin
+                {
+                    if (result.Status == false)
+                    {
+                        return -1;
+                        //Tài khoản đang bị khóa
                     }
                     else
                     {
-                        return -2;
-                        //Nhập sai mật khẩu
+                        if (result.Password == PassWord)
+                        {
+                            return 1;
+                            //Nhập đúng mật khẩu
+                        }
+                        else
+                        {
+                            return -2;
+                            //Nhập sai mật khẩu
+                        }
                     }
                 }
             }

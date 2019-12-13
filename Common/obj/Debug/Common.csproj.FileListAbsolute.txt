@@ -3,3 +3,17 @@ C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Debu
 C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\obj\Debug\Common.csprojAssemblyReference.cache
 C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\obj\Debug\Common.dll
 C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\obj\Debug\Common.pdb
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Debug\System.Web.Helpers.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Debug\System.Web.Mvc.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Debug\System.Web.Razor.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Debug\System.Web.WebPages.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Debug\System.Web.Helpers.xml
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Debug\System.Web.Mvc.xml
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Debug\System.Web.Razor.xml
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Debug\System.Web.WebPages.xml
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\obj\Debug\Common.csproj.CopyComplete

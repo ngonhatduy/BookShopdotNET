@@ -30,7 +30,9 @@ namespace Models.EntityFramework
         public virtual DbSet<SystemConfig> SystemConfigs { get; set; }
         public virtual DbSet<Tag> Tags { get; set; }
         public virtual DbSet<User> Users { get; set; }
-
+        public virtual DbSet<Role> Roles { set; get; }
+        public virtual DbSet<Credential> Credentials { set; get; }
+        public virtual DbSet<UserGroup> UserGroups { set; get; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<About>()

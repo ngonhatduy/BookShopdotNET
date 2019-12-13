@@ -19,6 +19,8 @@
         [Display(Name = "Mật khẩu")]
         public string Password { get; set; }
 
+        [StringLength(20)]
+        public string GroupID { set; get; }
 
         [StringLength(50)]
         [Display(Name = "Họ tên")]

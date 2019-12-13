@@ -21,7 +21,7 @@ namespace OnlineShop.Areas.Admin.Controllers
             if(ModelState.IsValid)
             {
                 var DataAccess = new UserDataAccess();
-                var result = DataAccess.Login(model.UserName, Encryptor.MD5Hash(model.Password));
+                var result = DataAccess.Login(model.UserName, Encryptor.MD5Hash(model.Password), true);
                 if(result == 1)
                 {
                     var user = DataAccess.GetById(model.UserName);
@@ -42,6 +42,10 @@ namespace OnlineShop.Areas.Admin.Controllers
                 else if(result == -2)
                 {
                     ModelState.AddModelError("", "Mật khẩu không đúng.");
+                }
+                else if (result == -3)
+                {
+                    ModelState.AddModelError("", "Tài khoản của bạn không có quyền đăng nhập vào trang quản trị."); //Do user không phải là admin
                 }
                 else
                 {
