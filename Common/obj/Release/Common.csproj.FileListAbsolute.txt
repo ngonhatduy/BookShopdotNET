@@ -1,5 +1,0 @@
-C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Release\Common.dll
-C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\bin\Release\Common.pdb
-C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\obj\Release\Common.dll
-C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\obj\Release\Common.pdb
-C:\Users\Duy.Ngo\Documents\Visual Studio 2019\Project\OnlineShop\Common\obj\Release\Common.csprojAssemblyReference.cache
